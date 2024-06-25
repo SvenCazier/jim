@@ -1,0 +1,259 @@
+{% extends "baseTemplate.twig" %}
+{% block content %}
+	<section class="wrapper calculators-wrapper">
+		<article class="accordeon elevate">
+			<details open>
+				<summary>
+					<span>State of Power Prep Phase</span>
+				</summary>
+				<div class="resizer">
+					<div class="iframe-overlay">
+						<iframe src="https://onedrive.live.com/embed?resid=170CE749E6B0B63%2139707&authkey=%21ADubK7_VN00aWqM&em=2&wdAllowInteractivity=False&AllowTyping=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+					</div>
+					<div class="resize-handle"></div>
+				</div>
+			</details>
+			<details>
+				<summary>
+					<span>Troop training/promotion</span>
+				</summary>
+				<div class="calculator-grid">
+					<article id="troopTrainingForm" class="form-card">
+						<form>
+							<main class="form-card__body">
+								<fieldset>
+									<legend>Training</legend>
+									<div class="form-group">
+										<label for="fcLevel" class="form-group__label">Fire Crystal Level</label>
+										<select id="fcLevel" name="fcLevel">
+											<option value="0">None</option>
+											<option value="1">Fire Crystal 1</option>
+											<option value="2">Fire Crystal 2</option>
+											<option value="3">Fire Crystal 3</option>
+											<option value="4">Fire Crystal 4</option>
+											<option value="5">Fire Crystal 5</option>
+											<option value="6">Fire Crystal 6</option>
+											<option value="7">Fire Crystal 7</option>
+											<option value="8">Fire Crystal 8</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="troopType" class="form-group__label">Troop Type:</label>
+										<select id="troopType" name="troopType">
+											<option value="infantry">Infantry</option>
+											<option value="marksman">Marksman</option>
+											<option value="lancer">Lancer</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="troopCount" class="form-group__label">Number of Troops</label>
+										<input type="number" id="troopCount" name="troopCount" class="form-group__input" min="0" value="0">
+									</div>
+									<div class="form-group">
+										<label for="troopLevel" class="form-group__label">Desired Level</label>
+										<select id="troopLevel" name="troopLevel">
+											<option value="1">I - Rookie</option>
+											<option value="2">II - Trained</option>
+											<option value="3">III - Senior</option>
+											<option value="4">IV - Veteran</option>
+											<option value="5">V - Hardy</option>
+											<option value="6">VI - Heroid</option>
+											<option value="7">VII - Brave</option>
+											<option value="8">VIII - Elite</option>
+											<option value="9">IX - Supreme</option>
+											<option value="10">X - Apex</option>
+											<option value="11" disabled>XI - Helios</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="trainingSpeed" class="form-group__label">Training Speed %</label>
+										<input type="number" id="trainingSpeed" name="trainingSpeed" class="form-group__input" min="0" value="0">
+									</div>
+									<div class="form-group">
+										<label for="trainingCapacity" class="form-group__label">Training Capacity</label>
+										<input type="number" id="trainingCapacity" name="trainingCapacity" class="form-group__input" min="0" value="0">
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend>Promotion (use only when promoting)</legend>
+									<div class="form-group">
+										<label for="promotionFromLevel">Promotion from Level</label>
+										<select id="promotionFromLevel" name="promotionFromLevel">
+											<option value="">No promotion</option>
+											<option value="1">I - Rookie</option>
+											<option value="2">II - Trained</option>
+											<option value="3">III - Senior</option>
+											<option value="4">IV - Veteran</option>
+											<option value="5">V - Hardy</option>
+											<option value="6">VI - Heroic</option>
+											<option value="7">VII - Brave</option>
+											<option value="8">VIII - Elite</option>
+											<option value="9">IX - Supreme</option>
+											<option value="10">X - Apex</option>
+											<option value="11" disabled>XI - Helios</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="promotionCapacity" class="form-group__label">Promotion Capacity</label>
+										<input type="number" id="promotionCapacity" name="promotionCapacity" class="form-group__input" min="0" value="0">
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend>Buffs</legend>
+									<div class="form-group">
+										<label for="capacityBuff" class="form-group__label">3x Training Capacity</label>
+										<input type="checkbox" id="capacityBuff" class="form-group__input" name="capacityBuff">
+									</div>
+									<div class="form-group">
+										<label for="mobilizeBuff" class="form-group__label">Mobilize Buff</label>
+										<input type="checkbox" id="mobilizeBuff" class="form-group__input" name="mobilizeBuff">
+									</div>
+									<div class="form-group">
+										<label for="appointment" class="form-group__label">Appointment</label>
+										<select id="appointment" name="appointment">
+											<option value="">None</option>
+											<option value="vicePresident">Vice-President</option>
+											<option value="ministerOfEducation">Minister of Education</option>
+											<option value="theGreedy">The Greedy</option>
+											<option value="theMindless">The Mindless</option>
+										</select>
+									</div>
+								</fieldset>
+							</main>
+						</form>
+					</article>
+					<table id="troopTrainingTableTotal" class="calculator-table">
+						<thead>
+							<tr>
+								<th colspan="4">Total
+									<button id="addToSum" class="button button--outline cta add">Add to sum</button>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>days</th>
+								<th>hours</th>
+								<th>minutes</th>
+								<th>seconds</th>
+							</tr>
+							<tr>
+								<td id="totalDays">0</td>
+								<td id="totalHours">0</td>
+								<td id="totalMinutes">0</td>
+								<td id="totalSeconds">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>meat</th>
+								<th>wood</th>
+								<th>coal</th>
+								<th>iron</th>
+							</tr>
+							<tr>
+								<td id="totalMeat">0</td>
+								<td id="totalWood">0</td>
+								<td id="totalCoal">0</td>
+								<td id="totalIron">0</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="2">power increase</th>
+								<td colspan="2" id="totalPower">0</td>
+							</tr>
+						</tfoot>
+						<tfoot></tfoot>
+					</table>
+					<table id="troopTrainingTableSession" class="calculator-table">
+						<thead>
+							<tr>
+								<th colspan="4">At max capacity(!),
+									<span id="sessionCount">0</span>
+									sessions of
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>days</th>
+								<th>hours</th>
+								<th>minutes</th>
+								<th>seconds</th>
+							</tr>
+							<tr>
+								<td id="sessionDays">0</td>
+								<td id="sessionHours">0</td>
+								<td id="sessionMinutes">0</td>
+								<td id="sessionSeconds">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>meat</th>
+								<th>wood</th>
+								<th>coal</th>
+								<th>iron</th>
+							</tr>
+							<tr>
+								<td id="sessionMeat">0</td>
+								<td id="sessionWood">0</td>
+								<td id="sessionCoal">0</td>
+								<td id="sessionIron">0</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="2">power increase</th>
+								<td colspan="2" id="sessionPower">0</td>
+							</tr>
+						</tfoot>
+					</table>
+					<table id="troopTrainingTableSum" class="calculator-table">
+						<thead>
+							<tr>
+								<th colspan="4">Total sum</th>
+							</tr>
+						</thead>
+						<tbody id="basket"></tbody>
+						<tbody>
+							<tr>
+								<th>days</th>
+								<th>hours</th>
+								<th>minutes</th>
+								<th>seconds</th>
+							</tr>
+							<tr>
+								<td id="sumDays">0</td>
+								<td id="sumHours">0</td>
+								<td id="sumMinutes">0</td>
+								<td id="sumSeconds">0</td>
+							</tr>
+						</tbody>
+						<tbody>
+							<tr>
+								<th>meat</th>
+								<th>wood</th>
+								<th>coal</th>
+								<th>iron</th>
+							</tr>
+							<tr>
+								<td id="sumMeat">0</td>
+								<td id="sumWood">0</td>
+								<td id="sumCoal">0</td>
+								<td id="sumIron">0</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="2">power increase</th>
+								<td colspan="2" id="sumPower">0</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</details>
+		</article>
+	</section>
+{% endblock %}

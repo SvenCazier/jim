@@ -1,0 +1,65 @@
+{% set formErrors = errors | filter((v, k) => k in ["eventname", "date", "voicechannel", "description", "createEvent"] ) %}
+{% if formErrors %}
+	{% set autofocusKeys = ["description", "voicechannel", "date", "eventname"] %} 
+	{% set autofocus = null %}
+	{% for key in autofocusKeys %}
+		{% if formErrors[key] is defined %}
+			{% set autofocus = key %}
+		{% endif %}
+	{% endfor %}
+{% else %}
+	{% set autofocus = "eventName" %}
+{% endif %}
+
+<dialog id="createEventModal" class="modal" {% if formErrors %} open {% endif %}>
+    <div class="modal-content elevate">
+        <header class="form-card__header">
+            <h2>Create event</h2>
+            <span id="closeModal" class="modal-close">&times;</span>
+        </header>
+        <form id="eventForm" action="" method="post">
+            <main class="form-card__body">
+            	{% if formErrors.createEvent is defined %}
+					<p class="error-message">{{ errors.createEvent }}</p>
+				{% endif %}
+                <div class="form-group">
+                    <label for="eventname" class="form-group__label">Event Name</label>
+                    <input type="text" id="eventname" name="eventname" class="form-group__input custom-datalist" list="" {% if createEventForm.eventname %} value="{{ createEventForm.eventname }}" {% endif %} autocomplete="off" {% if autofocus == "eventname" %} autofocus {% endif %}>
+                    <div class="custom-datalist-wrapper">
+                        <datalist id="eventnames">
+                            {% for eventType in eventTypes %}
+                                <option value="{{ eventType.name }}">{{ eventType.name }}</option>
+                            {% endfor %}
+                        </datalist>
+                    </div>
+                    {% if formErrors.eventname is defined %}
+						<p class="error-message error-message__input">{{ errors.eventname }}</p>
+					{% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="date" class="form-group__label">Date (local time)</label>
+                    <input type="datetime-local" id="date" name="date" class="form-group__input" {% if createEventForm.date %} value="{{ createEventForm.date }}" {% endif %} {% if autofocus == "date" %} autofocus {% endif %}>
+					{% if formErrors.date is defined %}
+						<p class="error-message error-message__input">{{ errors.date }}</p>
+					{% endif %}
+                </div>
+                <div class="form-group">
+                    <label for="voicechannel" class="form-group__label">Voice Channel</label>
+                    <select id="voicechannel" name="voicechannel" class="form-group__input" {% if autofocus == "voicechannel" %} autofocus {% endif %}>
+                        {% for channel in voiceChannels %}
+                            <option value="{{ channel.id }}" {% if createEventForm.voicechannel and createEventForm.voicechannel == channel.id %} selected {% endif %}>{{ channel.name}}</option>
+                        {% endfor %}  
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="form-group__label">Description</label>
+                    <textarea id="description" name="description" class="form-group__textarea" rows="4" cols="50" {% if autofocus == "description" %} autofocus {% endif %}>{% if createEventForm.description %}{{ createEventForm.description }}{% endif %}</textarea>
+                </div>
+                <input type="hidden" id="timeZoneOffset" name="timeZoneOffset" class="form-group__input hidden" readonly>
+            </main>
+            <footer class="form-card__footer">
+                <input type="submit" class="button button--contained" value="Submit">
+            </footer>
+        </form>
+    </div>
+</dialog>

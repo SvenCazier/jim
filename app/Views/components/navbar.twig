@@ -1,0 +1,55 @@
+<div class="header__container">
+	<h2 class="header__logo">JIM</h2>
+	<nav id="navbar" class="header__nav">
+		<ul>
+			<li>
+				<a href="{{ basePath() }}/" {% if route()==basePath() ~ "/" %} class="active" {% endif %}>
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ basePath() }}/about" {% if route()==basePath() ~ "/about" %} class="active" {% endif %}>
+					<span>About</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ basePath() }}/events" {% if route()==basePath() ~ "/events" %} class="active" {% endif %}>
+					<span>Events</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ basePath() }}/calculators" {% if route()==basePath() ~ "/calculators" %} class="active" {% endif %}>
+					<span>Calculators</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ basePath() }}/discord" {% if route()==basePath() ~ "/discord" %} class="active" {% endif %}>
+					<span>Discord</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ basePath() }}/contact" {% if route()==basePath() ~ "/contact" %} class="active" {% endif %}>
+					<span>Contact</span>
+				</a>
+			</li>
+			{% if isAuthenticated %}
+				<li>
+					<a href="{{ basePath() }}/logout" {% if route()==basePath() ~ "/logout" %} class="active" {% endif %}>
+						<span>Logout</span>
+					</a>
+				</li>
+			{% else %}
+				<li>
+					<a href="{{ basePath() }}/login" {% if route()==basePath() ~ "/login" %} class="active" {% endif %}>
+						<span>Login</span>
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+	</nav>
+	<button id="menu-button" class="menu-button closed" aria-label="toggle menu on small screens">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+</div>

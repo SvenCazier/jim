@@ -1,0 +1,68 @@
+{% extends "baseTemplate.twig" %}
+{% block content %}
+	{% if errors %}
+		{% set autofocusKeys = ["message", "subject", "email", "name"] %}
+		{% set autofocus = null %}
+		{% for key in autofocusKeys %}
+			{% if errors[key] is defined %}
+				{% set autofocus = key %}
+			{% endif %}
+		{% endfor %}
+	{% else %}
+		{% set autofocus = "name" %}
+	{% endif %}
+	<section class="wrapper flex">
+		<article class="form-card elevate">
+			<header class="form-card__header">
+				<h2>Contact Us</h2>
+			</header>
+			<form action="" method="post">
+				<main class="form-card__body">
+					<div class="form-group">
+						<label for="name" class="form-group__label">Name</label>
+						<input type="name" id="name" name="name" class="form-group__input" {% if contactForm.name %} value="{{ contactForm.name }}" {% endif %} {% if autofocus == "name" %} autofocus {% endif %} required>
+						{% if errors.name is defined %}
+							<p class="error-message error-message__input">{{ errors.name }}</p>
+						{% endif %}
+					</div>
+					<div class="form-group">
+						<label for="email" class="form-group__label">Email</label>
+						<input type="email" id="email" name="email" class="form-group__input" {% if contactForm.email %} value="{{ contactForm.email }}" {% endif %} {% if autofocus == "email" %} autofocus {% endif %} required>
+						{% if errors.email is defined %}
+							<p class="error-message error-message__input">{{ errors.email }}</p>
+						{% endif %}
+					</div>
+					<div class="form-group">
+						<label for="subject" class="form-group__label">Subject</label>
+						<input list="subjects" id="subject" name="subject" class="form-group__input" {% if contactForm.subject %} value="{{ contactForm.subject }}" {% endif %} {% if autofocus == "subject" %} autofocus {% endif %} required>
+						<datalist id="subjects">
+							<option value="General Inquiry"></option>
+							<option value="Technical Support"></option>
+							<option value="Feedback"></option>
+							<option value="Cookie Policy"></option>
+						</datalist>
+						{% if errors.subject is defined %}
+							<p class="error-message error-message__input">{{ errors.subject }}</p>
+						{% endif %}
+					</div>
+					<div class="form-group">
+						<label for="message" class="form-group__label">Message</label>
+						<textarea id="message" name="message" rows="4" class="form-group__textarea" {% if contactForm.message %} value="{{ contactForm.message }}" {% endif %} {% if autofocus == "message" %} autofocus {% endif %} required></textarea>
+						{% if errors.message is defined %}
+							<p class="error-message error-message__input">{{ errors.message }}</p>
+						{% endif %}
+					</div>
+					{% set errors = errors | filter((v, k) => k not in ["name", "email", "subject", "message"] ) %}
+					{% for error in errors %}
+						<p class="error-message error-message--big">
+							<b>{{ error }}</b>
+						</p>
+					{% endfor %}
+				</main>
+				<footer class="form-card__footer">
+					<input type="submit" class="button button--contained" value="Send">
+				</footer>
+			</form>
+		</article>
+	</section>
+{% endblock %}

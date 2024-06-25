@@ -1,0 +1,22 @@
+{% extends "baseTemplate.twig" %}
+{% block content %}
+	<section class="wrapper home-wrapper">
+		<article class="left">
+			<h1 class="header--big">Welcome to JIM</h1>
+			<h1>Justice Is Mine</h1>
+		</article>
+		<article class="right">
+			<p class="text--big">Join our esteemed alliance and conquer the challenges of Whiteout Survival alongside like-minded comrades.</p>
+			<p class="text--medium">Explore the icy expanse, hone your skills, and emerge as a formidable force in the unforgiving terrain.</p>
+			<p class="text--medium">Ready to embark on an adventure like no other?
+				<strong>
+					<a href="{{ basePath() }}/discord">Join JIM today!</a>
+				</strong>
+			</p>
+			<div class="cta">
+				<a href="{{ basePath() }}/events" class="button button--outline cta">View Events</a>
+				<a href="{{ basePath() }}/discord" class="button button--contained cta">Join Discord</a>
+			</div>
+		</article>
+	</section>
+{% endblock %}

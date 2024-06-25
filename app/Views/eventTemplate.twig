@@ -1,0 +1,68 @@
+{% extends "baseTemplate.twig" %}
+{% block content %}
+	{% set unnamedErrors = errors | filter((v, k) => k not in ["eventname", "date", "voicechannel", "description", "createEvent"] ) %}
+	{% if unnamedErrors %}
+		{% if unnamedErrors|length == 1 and "I seem to be unable to show you the events right now" in unnamedErrors[0] %}
+			<section class="wrapper">
+				<div class="jimbot-says">
+					<div class="bubble">
+						{{ unnamedErrors[0] }}
+					</div>
+				</div>
+			</section>
+		{% else %}
+			<section class="wrapper wrapper--text">
+				{% for error in unnamedErrors %}
+					<p class="error-message error-message--big">
+						<b>{{ error }}</b>
+					</p>
+				{% endfor %}
+			</section>
+		{% endif %}
+	{% else %}
+		<section class="wrapper">
+			{% if isAuthenticated %}
+				<header class="events__controls">
+					<button class="button button--contained" id="openCreateModal">Create event</button>
+				</header>
+			{% endif %}
+			<article class="events__container elevate">
+				{% if events|length > 0 %}
+					{% for key, eventDate in events %}
+						<section class="events">
+							<header class="events__title">
+								<h4 class="events__title__text" datetime="{{ key|date('D M d Y') }}">{{ key }}</h4>
+							</header>
+							<div class="events__articles">
+								{% for event in eventDate %}
+									<article class="event">
+										<time class="event__time" datetime="{{ event.scheduledStartFullUTCString }}">{{ event.scheduledStartUTCTime }}</time>
+										<div class="event__name"><img class="event__img" src="public/img/events/{{ event.eventTypeId }}.png">{{ event.name }}</div>
+										<div class="event__location">
+											{% if event.channelId %}
+												<a href="https://discord.com/channels/{{ event.guildId }}/{{ event.channelId }}" target="_blank">{{ event.channelName }}</a>
+											{% else %}
+												{{ event.channelName }}
+											{% endif %}
+										</div>
+										{% if isAuthenticated %}
+											<div class="event_controls">
+												<button class="button button--contained" id="openModifyModal">Modify</button>
+												<a class="button button--contained" href="{{ basePath() }}/events/delete?id={{ event.id }}" ">Cancel</a>
+											</div>
+										{% endif %}
+									</article>
+								{% endfor %}
+							</div>
+						</section>
+					{% endfor %}
+				{% else %}
+					<p>No planned events</p>
+				{% endif %}
+			</article>
+		</section>
+		{% if isAuthenticated %}
+			{% include "/components/createEventModalTemplate.twig" %}
+		{% endif %}
+	{% endif %}
+{% endblock %}
