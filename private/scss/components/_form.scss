@@ -1,0 +1,43 @@
+.form-card {
+	background-color: $color-white;
+	border-radius: 0.5em;
+	width: $form-card-width;
+	margin: 0 auto;
+	padding: $form-card-padding;
+	display: flex;
+	flex-direction: column;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		font-size: $form-card-header-font-size;
+		font-weight: bold;
+		margin-bottom: 1.25em;
+	}
+
+	&__body {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	fieldset {
+		border: 1px groove $color-primary;
+		border-radius: 0.5em;
+		padding: 0.5em 1.5em;
+		&:not(:last-of-type) {
+			margin-bottom: 1em;
+		}
+
+		legend {
+			color: $color-primary;
+			font-size: $form-group-label-font-size;
+			font-weight: 500;
+		}
+	}
+}

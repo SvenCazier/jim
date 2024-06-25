@@ -1,0 +1,31 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.article__title--main {
+    margin-bottom: 0.5em;
+}
+
+.article__title--underline {
+    display: inline-block;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 125%;
+        border-bottom: 4px solid $color-black;
+    }
+}
+
+.article__title {
+    margin-bottom: 0.25em;
+}
+
+.article__content {
+    margin-bottom: 1em;
+}

@@ -1,0 +1,43 @@
+.events__container {
+  background-color: $color-white;
+  border-radius: 0.5em;
+}
+
+.events__controls {
+  display: flex;
+  justify-content: end;
+  padding: 0.75em;
+}
+
+.events__title {
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  padding: 1em 1.5em;
+}
+
+.events__title__text {
+  margin-bottom: -5px;
+}
+
+.event {
+  display: flex;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  padding: 1em 1.5em;
+}
+
+.event__time {
+  flex: 1;
+}
+
+.event__name {
+  display: flex;
+  align-items: center;
+  flex: 4;
+}
+
+.event__img {
+  height: 1.5em;
+}
+
+.event__location {
+  flex: 1;
+}

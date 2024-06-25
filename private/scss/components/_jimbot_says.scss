@@ -1,0 +1,81 @@
+.jimbot-says {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100%;
+	width: 100%;
+	border: 0.5em solid $color-black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../img/jimbot_sm.png");
+
+	img {
+		width: 100%;
+	}
+	.bubble {
+		position: absolute;
+		bottom: 0.25em;
+		left: 0.25em;
+		right: 0.25em;
+		font-family: "Press Start 2P", cursive;
+		font-size: 1em;
+		line-height: 1.3em;
+		background-color: $color-white;
+		color: $color-black;
+		padding: 0.75em;
+		box-shadow: 0 -0.25em $color-white, 0 -0.5em $color-black, 0.25em 0 $color-white, 0.25em -0.25em $color-black, 0.5em 0 $color-black, 0 0.25em $color-white, 0 0.5em $color-black, -0.25em 0 $color-white, -0.25em 0.25em $color-black, -0.5em 0 $color-black, -0.25em -0.25em $color-black, 0.25em 0.25em $color-black;
+		width: calc(100% - 0.5em);
+		height: fit-content;
+		text-align: left;
+		text-transform: uppercase;
+	}
+
+	.bubble::after {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 0.25em;
+		width: 0.25em;
+		top: -0.5em;
+		left: 32px;
+		box-shadow: 0 -0.25em $color-black, 0 -0.5em $color-black, 0 -12px $color-black, 0 -16px $color-black, -0.25em -12px $color-black, -0.5em -0.5em $color-black, -12px -0.25em $color-black, -0.25em -0.25em $color-white, -0.5em -0.25em $color-white, -0.25em -0.5em $color-white, -0.25em 0 $color-white, -0.5em 0 $color-white, -12px 0 $color-white;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.jimbot-says {
+		.bubble {
+			font-size: 1.25em;
+		}
+	}
+}
+@media screen and (min-width: 905px) {
+	.jimbot-says {
+		max-width: 840px;
+
+		.bubble {
+			font-size: 1.5em;
+		}
+	}
+}
+@media screen and (min-width: 1240px) {
+	.jimbot-says {
+		width: 75%;
+		max-width: none;
+
+		.bubble {
+			font-size: 1.5em;
+		}
+	}
+}
+@media screen and (min-width: 1400px) {
+	.jimbot-says {
+		width: 100%;
+		max-width: 1040px;
+
+		.bubble {
+			font-size: 1.5em;
+		}
+	}
+}

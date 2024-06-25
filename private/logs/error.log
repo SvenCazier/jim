@@ -1,0 +1,190 @@
+[2024-02-17 20:04:24][65d11148d975d]file_get_contents(http://localhost:10000/event): Failed to open stream: HTTP request failed!
+[2024-02-17 20:09:26][65d1127679aee]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-17 20:47:49][65d11b7545d4a]file_get_contents(http://localhost:10000/event): Failed to open stream: HTTP request failed!
+[2024-02-17 21:35:53][65d126b9900ed]file_get_contents(http://localhost:10000/event): Failed to open stream: HTTP request failed!
+[2024-02-18 14:00:41][65d20d89739d5]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 14:00:50][65d20d92d55e0]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 19:16:33][65d25791e0d32]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 19:16:40][65d25798a5355]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:32:12][65d2937c1c823]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:32:21][65d2938593dad]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:32:26][65d2938ab217c]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:32:27][65d2938b3ec22]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:32:40][65d2939809f79]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:32:40][65d293985b63a]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:45:03][65d2967f291dc]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:45:35][65d2969fa6548]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:46:18][65d296ca8c061]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:46:22][65d296ce16a5d]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:46:22][65d296ce929a0]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:46:22][65d296ceccaae]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:46:23][65d296cf0e3a0]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:46:38][65d296de7562e]file_get_contents(http://localhost:10000/invite): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-02-18 23:47:54][65d2972ab4afe]file_get_contents(http://localhost:10000/invite): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:01][65d297319da32]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:05][65d29735c0397]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:09][65d29739e6a93]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:14][65d2973e0d997]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:18][65d29742251c1]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:22][65d2974640762]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:26][65d2974a62b96]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:30][65d2974e7fa51]file_get_contents(http://localhost:10000/invite): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:34][65d2975299696]file_get_contents(http://localhost:10000/invite): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:48:38][65d29756b38e3]file_get_contents(http://localhost:10000/invite): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:49:05][65d297715dc2c]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:49:39][65d297938046e]file_get_contents(http://localhost:10000/invite): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:49:53][65d297a1455e7]file_get_contents(http://localhost:10000/invite): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:54:23][65d298af5e97e]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:54:31][65d298b7144bd]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:56:00][65d299106b3b2]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:57:42][65d29976af566]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-18 23:58:32][65d299a8ce6ce]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-19 00:00:51][65d29a33dfe51]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-19 00:01:31][65d29a5b0997a]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-19 00:21:03][65d29eefb98e5]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-20 16:10:22][65d4ceee6fd6d]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-20 16:10:26][65d4cef29710e]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-20 20:00:04][65d504c4a45e2]cURL Error: Failed to connect to localhost port 10000 after 2259 ms: Couldn't connect to server
+[2024-02-20 20:00:08][65d504c8c4c71]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-21 10:50:22][65d5d56eadd3d]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-02-21 17:08:27][65d62e0b8e6fe]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-03-13 22:19:03][65f226571ed9d]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-03-13 22:19:07][65f2265b3adf6]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-03-13 23:06:37][65f2317daab0e]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-03-15 23:26:21][65f4d91d5fe3b]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-03-16 01:23:30][65f4f4927b46f]file_get_contents(http://localhost:10000/event): Failed to open stream: No connection could be made because the target machine actively refused it
+[2024-03-16 01:33:07][65f4f6d3e9b7e]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 01:36:57][65f4f7b97949a]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 01:37:08][65f4f7c49ba0c]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 01:37:13][65f4f7c9306b1]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 01:37:14][65f4f7caf3db9]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 01:37:20][65f4f7d078a3f]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 01:55:31][65f4fc13a936e]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-16 02:17:47][65f5014b68153]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 22:55:01][65fa17c5aa0f7]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 22:55:41][65fa17ed835a3]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 22:55:44][65fa17f04e1ed]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 22:57:33][65fa185d2faee]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:01:34][65fa194e240f0]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:04:02][65fa19e2d2a77]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:05:03][65fa1a1fd34f6]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:06:29][65fa1a75f2541]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:07:04][65fa1a98767b5]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:20:09][65fa1da91103e]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:20:41][65fa1dc9a346c]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:20:47][65fa1dcfcd7b0]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:23:16][65fa1e64bd0fa]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:23:22][65fa1e6a3d0ba]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:27:19][65fa1f579f653]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:27:21][65fa1f5955629]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:32:27][65fa208b531f7]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:32:29][65fa208df403c]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:32:31][65fa208fb5042]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:34:55][65fa211fec2ce]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:34:57][65fa2121028aa]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:34:58][65fa212208a88]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:34:59][65fa21230f091]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:00][65fa212415a2a]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:01][65fa21251bec9]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:02][65fa212622c75]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:03][65fa21272d252]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:04][65fa21283b3f4]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:05][65fa212941c76]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:27][65fa213f44b85]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:28][65fa21407c90b]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:29][65fa214183182]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:30][65fa214289a2d]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:31][65fa21438fd5c]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:32][65fa21449651b]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:50][65fa2156ed9f3]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:51][65fa2157f41ba]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:53][65fa215905c35]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:35:54][65fa215a0c42e]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:36:19][65fa21734ef33]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:38:10][65fa21e2df700]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:38:12][65fa21e42e89e]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-19 23:38:13][65fa21e5350b2]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-03-20 18:09:29][65fb2659bb26c]SMTP Error: Could not authenticate.
+[2024-03-20 18:11:55][65fb26eb294af]SMTP Error: data not accepted.
+[2024-03-20 18:32:32][65fb2bc0e5ff8]Non-static method App\Business\MailService::sendMail() cannot be called statically
+[2024-03-20 18:54:57][65fb3101baf66]file_get_contents(../EmailTemplates/ContactEmail.html): Failed to open stream: No such file or directory
+[2024-03-20 19:49:39][65fb3dd307ad5]hex2bin(): Hexadecimal input string must have an even length
+[2024-03-20 19:52:44][65fb3e8cf37c0]Array to string conversion
+[2024-03-20 19:56:05][65fb3f551b1ae]hex2bin(): Hexadecimal input string must have an even length
+[2024-03-20 20:14:41][65fb43b199f66]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+[2024-03-20 20:15:30][65fb43e2dbe2e]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+[2024-03-20 20:17:10][65fb4446cd17a]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 20:17:54][65fb447276366]openssl_public_encrypt(): key parameter is not a valid public key
+[2024-03-20 20:26:33][65fb4679e45a2]Array to string conversion
+[2024-03-20 20:32:04][65fb47c44b3fa]openssl_public_encrypt(): key parameter is not a valid public key
+[2024-03-20 20:55:54][65fb4d5af37cd]openssl_pkey_get_details(): Argument #1 ($key) must be of type OpenSSLAsymmetricKey, false given
+[2024-03-20 20:57:55][65fb4dd31d538]Call to undefined function App\Business\openssl_ecdh_compute_key()
+[2024-03-20 21:01:36][65fb4eb0c45ce]openssl_public_encrypt(): key parameter is not a valid public key
+[2024-03-20 21:06:21][65fb4fcd76e6b]openssl_public_encrypt(): key parameter is not a valid public key
+[2024-03-20 21:38:28][65fb5754178c1]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 21:38:50][65fb576a1e35a]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 21:39:23][65fb578b4fa14]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 21:42:27][65fb5843737af]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 21:50:02][65fb5a0a475c5]openssl_pkey_get_details(): Argument #1 ($key) must be of type OpenSSLAsymmetricKey, false given
+[2024-03-20 21:52:20][65fb5a9400559]Object of class OpenSSLAsymmetricKey could not be converted to string
+[2024-03-20 21:52:41][65fb5aa9995de]Object of class OpenSSLAsymmetricKey could not be converted to string
+[2024-03-20 22:39:56][65fb65bcb4c3b]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 22:40:15][65fb65cf520f8]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 22:59:04][65fb6a38bdd14]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 23:02:39][65fb6b0f2b84e]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 23:03:43][65fb6b4f316ea]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-03-20 23:04:28][65fb6b7c64e5b]file_get_contents(http://localhost:3000/key-exchange): Failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+[2024-04-20 08:53:53][662382a1d65aa]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 08:53:55][662382a3e02b2]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 09:27:52][66238a981d9a2]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 09:27:53][66238a9927505]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:40:49][66239bb1d21c6]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:40:53][66239bb5f1149]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:41:17][66239bcd81605]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:46:32][66239d087c31f]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:47:27][66239d3f572e2]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:49:58][66239dd6d95e4]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:51:54][66239e4aa6da3]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:52:19][66239e637106b]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:55:00][66239f046f520]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:55:08][66239f0c6d595]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 10:55:51][66239f3732ee7]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 11:00:51][6623a063778ee]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 11:00:58][6623a06a8d42c]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 11:07:06][6623a1dabbfc4]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-04-20 11:07:12][6623a1e0c4684]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-05-30 12:29:39][66587133e67a9]Array to string conversion
+[2024-06-05 10:57:01][6660447dd4c00]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-06-05 10:57:12][6660448809eab]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+[2024-06-25 12:01:55][667ab1b370ac1]file_get_contents(http://localhost:10000/event): Failed to open stream: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond

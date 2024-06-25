@@ -1,0 +1,142 @@
+.accordeon {
+	background-color: $color-white;
+	border-radius: 0.5em;
+	width: 100%;
+
+	details {
+		summary {
+			display: flex;
+			align-items: center;
+			height: 3em;
+			list-style: none;
+			padding-left: 1em;
+			font-weight: 500;
+			background: $color-primary;
+			color: $color-white;
+			cursor: pointer;
+
+			span {
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "►";
+					left: 105%;
+					top: 50%;
+					transform: translateY(-50%);
+					font-size: 0.8125em;
+					color: $color-white-background;
+				}
+			}
+		}
+
+		&[open] {
+			summary {
+				span {
+					position: relative;
+					&::after {
+						content: "▼";
+					}
+				}
+			}
+		}
+
+		&:first-of-type {
+			summary {
+				border-radius: 0.5em 0.5em 0 0;
+			}
+		}
+
+		&:last-of-type:not([open]) {
+			summary {
+				border-radius: 0 0 0.5em 0.5em;
+			}
+		}
+
+		&:last-of-type[open] {
+			.resizer {
+				border-radius: 0 0 0.5em 0.5em;
+			}
+		}
+
+		.resizer {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			min-height: 70dvh;
+
+			.iframe-overlay {
+				display: flex;
+				flex: 1;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				pointer-events: auto;
+
+				iframe {
+					flex: 1;
+					margin: 0;
+					padding: 0;
+					border: 0;
+				}
+			}
+			.resize-handle {
+				position: relative;
+				height: 10px;
+				width: 100%;
+				background: #f9fbfd;
+				cursor: ns-resize;
+				user-select: none;
+
+				&::before {
+					position: absolute;
+					content: "—";
+					bottom: -70%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				&::after {
+					position: absolute;
+					content: "–";
+					bottom: -90%;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+			}
+		}
+
+		.calculator-grid {
+			display: grid;
+			grid-template-columns: auto;
+			grid-template-areas: "calculator-form" "table-total" "table-session" "table-sum";
+
+			#troopTrainingForm {
+				grid-area: calculator-form;
+				width: 100%;
+			}
+			#troopTrainingTableTotal {
+				grid-area: table-total;
+			}
+			#troopTrainingTableSession {
+				grid-area: table-session;
+			}
+			#troopTrainingTableSum {
+				grid-area: table-sum;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.accordeon {
+		details {
+			.calculator-grid {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-areas: "calculator-form table-total" "calculator-form table-session" "calculator-form table-sum" "calculator-form .";
+			}
+		}
+	}
+}

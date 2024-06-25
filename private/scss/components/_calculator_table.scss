@@ -1,0 +1,50 @@
+.calculator-table {
+	border-collapse: collapse;
+	margin: $form-card-padding;
+
+	thead {
+		th {
+			background: $color-primary;
+			color: $color-white;
+			font-size: $form-group-label-font-size;
+			font-weight: 500;
+			padding: 0.375em;
+			position: relative;
+
+			.button.button--outline.cta.add {
+				border: 1px solid rgba($color-white, 0.5);
+				color: $color-white;
+				padding: 0.125em 0.5em;
+				font-size: 0.75em;
+				position: absolute;
+				right: 1.2em;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+
+	tbody {
+		.button.button--outline.cta.delete {
+			padding: 0.125em 0.5em;
+			float: right;
+		}
+	}
+
+	tbody,
+	tfoot {
+		tr {
+			th {
+				background: rgba($color-primary, 0.15);
+				font-weight: 500;
+			}
+
+			th,
+			td {
+				padding: 0.375em;
+				width: 25%;
+				vertical-align: middle;
+			}
+		}
+	}
+}

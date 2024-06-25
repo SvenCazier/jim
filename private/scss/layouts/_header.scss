@@ -1,0 +1,140 @@
+.header {
+	background: $color-primary;
+	height: 3.75em;
+	position: sticky;
+	display: flex;
+	top: 0;
+	z-index: 99;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+	&__container {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__logo {
+		color: $color-secondary;
+		flex: 1;
+		text-align: center;
+		font-size: 2.5em;
+		user-select: none;
+		margin-right: -2.25rem;
+	}
+
+	&__nav {
+		position: absolute;
+		inset: 3.75em 0 0 0;
+		height: calc(100vh - 3.75em);
+		background: $color-primary;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			padding: 0;
+			user-select: none;
+		}
+
+		li {
+			a {
+				display: flex;
+				justify-content: center;
+				padding: 1em 0;
+				width: 100%;
+				text-decoration: none;
+				color: $color-white;
+				font-size: 1.2em;
+
+				&:hover {
+					background: $color-primary-accent;
+				}
+
+				&.active span {
+					border-bottom: 2px solid $color-white;
+				}
+			}
+		}
+
+		&.open {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.menu-button {
+		position: relative;
+		height: 2.25em;
+		width: 2.25em;
+		overflow: hidden;
+
+		span {
+			position: absolute;
+			left: 0;
+			background: $color-white;
+			height: 0.125em;
+			width: 100%;
+			transition: transform 0.3s ease;
+		}
+
+		span:nth-child(1) {
+			top: 0.375em;
+		}
+		span:nth-child(2) {
+			top: 1em;
+		}
+		span:nth-child(3) {
+			top: 1.625em;
+		}
+
+		&.open {
+			span:nth-child(1) {
+				transform: translateY(10px) rotate(-45deg);
+			}
+			span:nth-child(2) {
+				transform: translateX(-100%);
+			}
+			span:nth-child(3) {
+				transform: translateY(-10px) rotate(45deg);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1240px) {
+	.header {
+		&__logo {
+			text-align: left;
+			font-size: 1.75em;
+			margin: 0;
+		}
+
+		&__nav {
+			position: initial;
+			height: fit-content;
+			display: block;
+			opacity: 1;
+			visibility: visible;
+
+			ul {
+				flex-direction: row;
+			}
+
+			li {
+				a {
+					padding: 0;
+					margin: 0 1em;
+				}
+			}
+		}
+
+		.menu-button {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.form-group {
+	position: relative;
+	margin-bottom: $form-group-margin-bottom;
+
+	label {
+		font-size: $form-group-label-font-size;
+		margin-bottom: 0.625em;
+	}
+
+	input:not([type="checkbox"]),
+	select,
+	textarea {
+		width: 100%;
+		padding: $form-group-input-padding;
+		font-size: $form-group-input-font-size;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+		transition: border-color 0.3s ease;
+	}
+
+	select {
+		cursor: pointer;
+	}
+
+	&:has(input[type="checkbox"]) {
+		display: flex;
+	}
+
+	input[type="checkbox"] {
+		position: relative;
+		appearance: none;
+		background-color: $color-white;
+		margin-top: 0.1em;
+		margin-left: 0.5em;
+		width: 1.5em;
+		height: 1.5em;
+		border: 3px solid $color-primary;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 0.875em;
+		height: 0.875em;
+		scale: 0;
+		transform: translate(-50%, -50%);
+		transform-origin: top left;
+		transition: 120ms scale ease-in-out;
+		box-shadow: inset 1em 1em $color-primary-accent;
+	}
+
+	input[type="checkbox"]:checked::before {
+		scale: 1;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+}
+
+.custom-datalist-wrapper {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+datalist {
+	position: absolute;
+	width: 100%;
+	max-height: 10rem;
+	border: 1px solid rgba(0, 0, 0, 0.42);
+	border-top: none;
+	background: white;
+	overflow-y: auto;
+	z-index: 1;
+}
+
+datalist option {
+	padding: 0.625em;
+	cursor: pointer;
+}
+
+datalist option:hover,
+datalist option.active {
+	background: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,31 @@
+// main.scss
+
+// Import variables and mixins
+@import "utils/variables";
+@import "utils/mixins";
+
+// Import base styles
+@import "base/reset";
+@import "base/base";
+@import "base/fonts";
+
+// Import layout styles
+@import "layouts/header";
+@import "layouts/main";
+
+// Import page styles
+@import "pages/_home.scss";
+@import "pages/_about.scss";
+@import "pages/_events.scss";
+
+// Import component styles
+@import "components/helper";
+@import "components/modal";
+@import "components/form";
+@import "components/form_group";
+@import "components/accordeon";
+@import "components/calculator_table";
+@import "components/button";
+@import "components/error";
+@import "components/cookie_banner";
+@import "components/jimbot_says";

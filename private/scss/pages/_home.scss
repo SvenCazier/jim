@@ -1,0 +1,141 @@
+// Regular styles for the background image
+.background {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	backdrop-filter: brightness(0.3) blur(5px);
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
+	min-height: 100vh;
+	background-image: url("../img/background_480.png");
+}
+
+.home-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $color-primary;
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1.5em;
+
+		.header--big {
+			position: relative;
+			font-size: 3em;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 5px;
+				left: 50%;
+				transform: translateX(-50%);
+				border-bottom: 3px solid;
+				width: 50%;
+			}
+		}
+	}
+
+	.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.text--big {
+			font-size: 1.5em;
+			margin-bottom: 1em;
+		}
+
+		.text--medium {
+			font-size: 1em;
+		}
+
+		.cta {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			margin-top: 1.5em;
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.background {
+		background-image: url("../img/background_720.png");
+	}
+	.home-wrapper {
+		margin: 0 auto;
+		max-width: 80%;
+
+		.right {
+			min-width: 45ch;
+			max-width: 75ch;
+		}
+	}
+}
+@media screen and (min-width: 905px) {
+	.home-wrapper {
+		max-width: min(80%, 1500px);
+
+		.left {
+			margin-bottom: 2em;
+		}
+
+		.right {
+			.cta {
+				flex-direction: row;
+				justify-content: space-evenly;
+				margin-top: 2.5em;
+				width: initial;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1240px) {
+	.background {
+		background-image: url("../img/background_1080.png");
+	}
+}
+@media screen and (min-width: 1400px) {
+	.home-wrapper {
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 0;
+
+			.header--big {
+				font-size: 4em;
+
+				&::after {
+					border-width: 5px;
+				}
+			}
+		}
+
+		.right {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			min-width: 45ch;
+			max-width: 75ch;
+
+			.text--big {
+				font-size: 2em;
+				margin-bottom: 0.375em;
+			}
+
+			.text--medium {
+				font-size: 1.2em;
+			}
+		}
+	}
+}
